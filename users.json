@@ -4,5 +4,11 @@
     "name": "gabriel",
     "email": "gabriel@gabriel.com",
     "hashed_password": "$2b$12$O.th9LPS0Hk5Tkpx3l4gj.h5522ubF7V2dhXezAOtNchzgWtfWJ9i"
+  },
+  {
+    "id": 2,
+    "name": "teste",
+    "email": "teste@teste.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD."
   }
 ]
