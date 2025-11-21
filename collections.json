@@ -1,9 +1,29 @@
 [
   {
+    "id": 1,
     "name": "carrinhos",
     "is_public": true,
     "owner_id": 2,
-    "id": 1,
-    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=carrinhos"
+    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=carrinhos",
+    "value": 2343.0,
+    "itemCount": 11
+  },
+  {
+    "id": 2,
+    "name": "teste",
+    "is_public": true,
+    "owner_id": 2,
+    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=teste",
+    "value": 0.0,
+    "itemCount": 0
+  },
+  {
+    "id": 3,
+    "name": "tes1",
+    "is_public": true,
+    "owner_id": 2,
+    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=tes1",
+    "value": 0.0,
+    "itemCount": 0
   }
 ]

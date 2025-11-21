@@ -1,6 +1,7 @@
 from pydantic import BaseModel, EmailStr
 from typing import Optional
 
+# --- Schemas de Usuário (Mantenha estes) ---
 class UserCreate(BaseModel):
     name: str
     email: EmailStr 
@@ -11,7 +12,6 @@ class UserInDB(BaseModel):
     name: str
     email: EmailStr
     hashed_password: str  
-
 
 class UserPublic(BaseModel):
     id: int
@@ -26,21 +26,20 @@ class Token(BaseModel):
     access_token: str
     token_type: str
 
-class CollectionBase(BaseModel):
-    name: str
-    is_public: bool = True
-    owner_id: int
-
+# --- NOVOS Schemas de Coleção ---
 class CollectionCreate(BaseModel):
     name: str
     is_public: bool = True
     owner_id: int
 
-class CollectionInDB(CollectionBase):
+class CollectionInDB(BaseModel):
     id: int
-    image_url: Optional[str] = None # Campo para a foto
-    value: float = 0.0  # Campo para o valor total da coleção
-    itemCount: int = 0  # Campo para a contagem de itens
+    name: str
+    is_public: bool
+    owner_id: int
+    image_url: Optional[str] = None
+    value: float = 0.0
+    itemCount: int = 0
 
 class CollectionPublic(BaseModel):
     id: int
@@ -50,6 +49,32 @@ class CollectionPublic(BaseModel):
     image_url: Optional[str] = None
     value: float = 0.0
     itemCount: int = 0
+
+    class Config:
+        from_attributes = True
+
+class ItemBase(BaseModel):
+    name: str
+    description: Optional[str] = None
+    quantity: int = 1
+    estimated_value: float = 0.0
+    collection_id: int
+
+class ItemCreate(ItemBase):
+    pass
+
+class ItemInDB(ItemBase):
+    id: int
+    image_url: Optional[str] = None
+
+class ItemPublic(ItemBase):
+    id: int
+    name: str
+    description: Optional[str] = None
+    quantity: int
+    estimated_value: float
+    collection_id: int
+    image_url: Optional[str] = None
 
     class Config:
         from_attributes = True
