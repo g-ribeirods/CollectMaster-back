@@ -1,6 +1,6 @@
 import json
 from typing import List, Optional
-from .schemas import UserInDB, CollectionInDB, ItemInDB
+from .schemas import UserInDB, CollectionInDB, ItemInDB, ItemUpdate, CollectionUpdate
 
 DB_FILE = "users.json"
 
@@ -58,6 +58,21 @@ def get_collections_by_owner_id(owner_id: int) -> List[CollectionInDB]:
     collections = load_collections()
     return [col for col in collections if col.owner_id == owner_id]
 
+def update_collection_in_db(collection_id: int, collection_update: CollectionUpdate) -> Optional[CollectionInDB]:
+    collections = load_collections()
+    
+    for i, col in enumerate(collections):
+        if col.id == collection_id:
+            # Pydantic magic: atualiza apenas os campos enviados
+            update_data = collection_update.model_dump(exclude_unset=True)
+            updated_col = col.model_copy(update=update_data)
+            
+            collections[i] = updated_col
+            save_collections(collections)
+            return updated_col
+            
+    return None
+
 ITEMS_DB_FILE = "items.json"
 
 def load_items() -> List[ItemInDB]:
@@ -99,3 +114,43 @@ def update_collection_stats(collection_id: int):
             break
     
     save_collections(all_collections)
+
+def get_item_by_id(item_id: int) -> Optional[ItemInDB]:
+    items = load_items()
+    for item in items:
+        if item.id == item_id:
+            return item
+    return None
+
+def update_item_in_db(item_id: int, item_update: ItemUpdate) -> Optional[ItemInDB]:
+    items = load_items()
+    
+    for i, item in enumerate(items):
+        if item.id == item_id:
+            # Atualiza apenas os campos que foram enviados (não nulos)
+            update_data = item_update.model_dump(exclude_unset=True)
+            updated_item = item.model_copy(update=update_data)
+            
+            items[i] = updated_item
+            save_items(items)
+            
+            # Atualiza estatísticas da coleção
+            update_collection_stats(updated_item.collection_id)
+            return updated_item
+            
+    return None
+
+def delete_item_in_db(item_id: int) -> bool:
+    items = load_items()
+    
+    for i, item in enumerate(items):
+        if item.id == item_id:
+            collection_id = item.collection_id # Guarda o ID para atualizar estatísticas
+            
+            items.pop(i) # Remove da lista
+            save_items(items)
+            
+            update_collection_stats(collection_id) # Recalcula
+            return True
+            
+    return False

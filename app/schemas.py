@@ -27,31 +27,33 @@ class Token(BaseModel):
     token_type: str
 
 # --- NOVOS Schemas de Coleção ---
-class CollectionCreate(BaseModel):
+class CollectionBase(BaseModel):
     name: str
+    description: Optional[str] = None # Novo campo
     is_public: bool = True
     owner_id: int
+    image_url: Optional[str] = None   # Agora faz parte da base
 
-class CollectionInDB(BaseModel):
-    id: int
-    name: str
-    is_public: bool
-    owner_id: int
+class CollectionCreate(CollectionBase):
+    pass # Herda tudo de cima
+
+class CollectionUpdate(BaseModel): # Novo Schema para Edição
+    name: Optional[str] = None
+    description: Optional[str] = None
+    is_public: Optional[bool] = None
     image_url: Optional[str] = None
+
+class CollectionInDB(CollectionBase):
+    id: int
     value: float = 0.0
     itemCount: int = 0
 
-class CollectionPublic(BaseModel):
-    id: int
-    name: str
-    is_public: bool
-    owner_id: int
-    image_url: Optional[str] = None
-    value: float = 0.0
-    itemCount: int = 0
-
+class CollectionPublic(CollectionInDB):
     class Config:
         from_attributes = True
+
+# --- NOVOS Schemas de ITENS ---
+
 
 class ItemBase(BaseModel):
     name: str
@@ -78,3 +80,10 @@ class ItemPublic(ItemBase):
 
     class Config:
         from_attributes = True
+
+class ItemUpdate(BaseModel):
+    name: Optional[str] = None
+    description: Optional[str] = None
+    quantity: Optional[int] = None
+    estimated_value: Optional[float] = None
+    image_url: Optional[str] = None

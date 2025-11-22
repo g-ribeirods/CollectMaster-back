@@ -1,28 +1,31 @@
 [
   {
-    "id": 1,
     "name": "carrinhos",
+    "description": "",
     "is_public": true,
     "owner_id": 2,
-    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=carrinhos",
-    "value": 2343.0,
-    "itemCount": 11
+    "image_url": "https://imgs.casasbahia.com.br/1562192417/1xg.jpg?imwidth=500",
+    "id": 1,
+    "value": 213.0,
+    "itemCount": 1
   },
   {
-    "id": 2,
     "name": "teste",
+    "description": "",
     "is_public": true,
     "owner_id": 2,
-    "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=teste",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7v8swxcPwGVgwbmfFdIvVKYJdhKx2iBztw&s",
+    "id": 2,
     "value": 0.0,
     "itemCount": 0
   },
   {
-    "id": 3,
     "name": "tes1",
+    "description": null,
     "is_public": true,
     "owner_id": 2,
     "image_url": "https://via.placeholder.com/300x200/4F518C/FFFFFF?text=tes1",
+    "id": 3,
     "value": 0.0,
     "itemCount": 0
   }
