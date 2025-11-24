@@ -154,3 +154,21 @@ def delete_item_in_db(item_id: int) -> bool:
             return True
             
     return False
+
+def delete_collection_in_db(collection_id: int) -> bool:
+    collections = load_collections()
+    
+    for i, col in enumerate(collections):
+        if col.id == collection_id:
+            # 1. Remove a coleção
+            collections.pop(i)
+            save_collections(collections)
+            
+            # 2. Remove todos os itens dessa coleção (Limpeza em cascata)
+            all_items = load_items()
+            remaining_items = [item for item in all_items if item.collection_id != collection_id]
+            save_items(remaining_items)
+            
+            return True
+            
+    return False

@@ -16,5 +16,14 @@
     "collection_id": 201,
     "id": 4,
     "image_url": "https://via.placeholder.com/150?text=teste item"
+  },
+  {
+    "name": "sdasdasd",
+    "description": "1232131",
+    "quantity": 1,
+    "estimated_value": 12.0,
+    "collection_id": 1,
+    "id": 5,
+    "image_url": "https://via.placeholder.com/150?text=sdasdasd"
   }
 ]

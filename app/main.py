@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import auth, collections, items
+from .routers import auth, collections, items, users
 
 app = FastAPI()
 
@@ -32,6 +32,9 @@ app.include_router(
     prefix="/api/collections", 
     tags=["Coleções"]
 )
+
+app.include_router(users.router, prefix="/api/users", tags=["Usuários"])
+
 @app.get("/api")
 async def root():
     return {"message": "Bem-vindo ao CollectMaster API"}
