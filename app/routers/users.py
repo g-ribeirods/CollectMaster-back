@@ -27,3 +27,10 @@ async def read_user(user_id: int):
     if user is None:
         raise HTTPException(status_code=404, detail="Usuário não encontrado")
     return user
+
+@router.put("/{user_id}", response_model=schemas.UserPublic)
+async def update_user(user_id: int, user_data: schemas.UserUpdate):
+    updated_user = db_json.update_user_in_db(user_id, user_data)
+    if not updated_user:
+        raise HTTPException(status_code=404, detail="Usuário não encontrado")
+    return updated_user

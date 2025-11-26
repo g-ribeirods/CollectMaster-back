@@ -2,6 +2,11 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 
 # --- Schemas de Usuário (Mantenha estes) ---
+class UserUpdate(BaseModel): # <--- NOVO SCHEMA
+    name: Optional[str] = None
+    email: Optional[EmailStr] = None
+    bio: Optional[str] = None
+
 class UserCreate(BaseModel):
     name: str
     email: EmailStr 
@@ -11,12 +16,14 @@ class UserInDB(BaseModel):
     id: int
     name: str
     email: EmailStr
-    hashed_password: str  
+    hashed_password: str
+    bio: Optional[str] = None
 
 class UserPublic(BaseModel):
     id: int
     name: str
     email: EmailStr
+    bio: Optional[str] = None
 
 class LoginRequest(BaseModel):
     email: EmailStr

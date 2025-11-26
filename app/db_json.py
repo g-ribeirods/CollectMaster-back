@@ -1,6 +1,6 @@
 import json
 from typing import List, Optional
-from .schemas import UserInDB, CollectionInDB, ItemInDB, ItemUpdate, CollectionUpdate
+from .schemas import UserInDB, CollectionInDB, ItemInDB, ItemUpdate, CollectionUpdate, UserUpdate
 
 DB_FILE = "users.json"
 
@@ -172,3 +172,20 @@ def delete_collection_in_db(collection_id: int) -> bool:
             return True
             
     return False
+
+def update_user_in_db(user_id: int, user_update: UserUpdate) -> Optional[UserInDB]:
+    users = load_users()
+    
+    for i, user in enumerate(users):
+        if user.id == user_id:
+            # Atualiza apenas os campos enviados
+            update_data = user_update.model_dump(exclude_unset=True)
+            
+            # Copia e atualiza
+            updated_user = user.model_copy(update=update_data)
+            
+            users[i] = updated_user
+            save_users(users)
+            return updated_user
+            
+    return None

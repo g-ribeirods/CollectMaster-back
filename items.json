@@ -1,29 +1,209 @@
 [
   {
-    "name": "asdas",
-    "description": "dasdsad",
+    "name": "960 Reis Patacao",
+    "description": "Prata, 1816.",
     "quantity": 1,
-    "estimated_value": 213.0,
+    "estimated_value": 800.0,
     "collection_id": 1,
     "id": 1,
-    "image_url": "https://m.media-amazon.com/images/I/81jTiMDz7hL._AC_UF894,1000_QL80_.jpg"
+    "image_url": "https://cdn.awsli.com.br/800x800/2139/2139267/produto/137665339/d42a2b3a84.jpg"
   },
   {
-    "name": "teste item",
-    "description": "teste item",
+    "name": "2000 Rei",
+    "description": "Prata, comemorativa.",
     "quantity": 2,
-    "estimated_value": 12.0,
-    "collection_id": 201,
-    "id": 4,
-    "image_url": "https://via.placeholder.com/150?text=teste item"
+    "estimated_value": 150.0,
+    "collection_id": 1,
+    "id": 2,
+    "image_url": "https://www.ecompletocdn.com.br/i/fp/1272/426214_1.jpg"
   },
   {
-    "name": "sdasdasd",
-    "description": "1232131",
+    "name": "4000 Reis",
+    "description": "Ouro, muito rara.",
     "quantity": 1,
-    "estimated_value": 12.0,
+    "estimated_value": 450.0,
     "collection_id": 1,
+    "id": 3,
+    "image_url": "https://www.ecompletocdn.com.br/i/fp/1272/487026_2_1401198172.jpg"
+  },
+  {
+    "name": "Kind of Blue",
+    "description": "Miles Davis Original.",
+    "quantity": 1,
+    "estimated_value": 300.0,
+    "collection_id": 2,
+    "id": 4,
+    "image_url": "https://m.media-amazon.com/images/I/71W8b8QzfiL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "name": "A Love Supreme",
+    "description": "John Coltrane Mint.",
+    "quantity": 1,
+    "estimated_value": 250.0,
+    "collection_id": 2,
     "id": 5,
-    "image_url": "https://via.placeholder.com/150?text=sdasdasd"
+    "image_url": "https://s2-pipelinevalor.glbimg.com/y4YmIbywsKOPfl_0eDYIJd76B50=/0x0:600x607/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b3309463db95468aa275bd532137e960/internal_photos/bs/2025/x/A/NgAc8wQ56eLTzZhVA51g/coltrane-love-supreme.jpg"
+  },
+  {
+    "name": "Time Out",
+    "description": "Dave Brubeck.",
+    "quantity": 1,
+    "estimated_value": 100.0,
+    "collection_id": 2,
+    "id": 6,
+    "image_url": "https://m.media-amazon.com/images/I/81tHyH2mfuL.jpg"
+  },
+  {
+    "name": "Blue Train",
+    "description": "Reedicao japonesa.",
+    "quantity": 1,
+    "estimated_value": 200.0,
+    "collection_id": 2,
+    "id": 7,
+    "image_url": "https://m.media-amazon.com/images/I/71aSnR4uTNL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "name": "Game Boy Original",
+    "description": "Modelo cinza, 1989.",
+    "quantity": 1,
+    "estimated_value": 800.0,
+    "collection_id": 3,
+    "id": 8,
+    "image_url": "https://images-cdn.ubuy.co.in/64408dd3e9c6db3e44228043-nintendo-game-boy-original-gray.jpg"
+  },
+  {
+    "name": "Game Boy Color",
+    "description": "Cor roxa translucida.",
+    "quantity": 1,
+    "estimated_value": 500.0,
+    "collection_id": 3,
+    "id": 9,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Game-Boy-Color-FL.jpg/250px-Nintendo-Game-Boy-Color-FL.jpg"
+  },
+  {
+    "name": "PSP 3000",
+    "description": "Desbloqueado, prata.",
+    "quantity": 1,
+    "estimated_value": 800.0,
+    "collection_id": 3,
+    "id": 10,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/PSP-3000-Silver.jpg/1200px-PSP-3000-Silver.jpg"
+  },
+  {
+    "name": "Wolverine",
+    "description": "Traje amarelo e azul.",
+    "quantity": 1,
+    "estimated_value": 300.0,
+    "collection_id": 4,
+    "id": 11,
+    "image_url": "https://images.tcdn.com.br/img/img_prod/460977/action_figure_wolverine_classico_marvel_x_men_hs01yd_hot_toys_x_hon_studio_escala_1_6_mkp_134853_3_c472c37276552d3abab7227e8df69b7a.jpeg"
+  },
+  {
+    "name": "Cyclops",
+    "description": "Edicao VHS box.",
+    "quantity": 1,
+    "estimated_value": 350.0,
+    "collection_id": 4,
+    "id": 12,
+    "image_url": "https://cdn.awsli.com.br/600x450/184/184312/produto/268991818/61ouxxe9rkl-_ac_sl1500_-ep650d9roi.jpg"
+  },
+  {
+    "name": "Magneto",
+    "description": "Capa de tecido.",
+    "quantity": 1,
+    "estimated_value": 300.0,
+    "collection_id": 4,
+    "id": 13,
+    "image_url": "https://storage.geralgeek.com.br/images/venda/Magneto-Deluxe-Iron-Studios-X-Men--65611f1976694.jpg"
+  },
+  {
+    "name": "Storm",
+    "description": "Traje branco anos 90.",
+    "quantity": 1,
+    "estimated_value": 250.0,
+    "collection_id": 4,
+    "id": 14,
+    "image_url": "https://images.tcdn.com.br/img/img_prod/832703/90_estatua_storm_premium_format_x_men_sideshow_collectibles_figure_1487_1_b36450849fea5de63e120ad851a5f6e9.jpg"
+  },
+  {
+    "name": "Charizard Holo",
+    "description": "Base set.",
+    "quantity": 1,
+    "estimated_value": 3000.0,
+    "collection_id": 5,
+    "id": 15,
+    "image_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/EX16/EX16_EN_6.png"
+  },
+  {
+    "name": "Blastoise",
+    "description": "Base set, near mint.",
+    "quantity": 1,
+    "estimated_value": 2000.0,
+    "collection_id": 5,
+    "id": 16,
+    "image_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/PGO/PGO_EN_17.png"
+  },
+  {
+    "name": "DeLorean",
+    "description": "De volta para o futuro.",
+    "quantity": 1,
+    "estimated_value": 80.0,
+    "collection_id": 6,
+    "id": 17,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81Vf7W0aNGL._AC_UL495_SR435,495_.jpg"
+  },
+  {
+    "name": "Batmobile 1989",
+    "description": "Edicao cinema.",
+    "quantity": 1,
+    "estimated_value": 90.0,
+    "collection_id": 6,
+    "id": 18,
+    "image_url": "https://cdn.dlojavirtual.com/static1/105429/sku/Hot-Wheels-BLY51-Batmovel_GA.jpg"
+  },
+  {
+    "name": "KITT",
+    "description": "Super Maquina.",
+    "quantity": 1,
+    "estimated_value": 70.0,
+    "collection_id": 6,
+    "id": 19,
+    "image_url": "https://a-static.mlcdn.com.br/%7Bw%7Dx%7Bh%7D/hot-wheels-knight-rider-k-i-t-t-concept-preto-colecionavel-mattel/toysteam/027084120134hw-hcr98/46b61f4fd583c47adadbf42aa4c88a2d.jpeg"
+  },
+  {
+    "name": "Ecto 1",
+    "description": "Ca\u00c3\u00a7a Fantasmas.",
+    "quantity": 1,
+    "estimated_value": 60.0,
+    "collection_id": 6,
+    "id": 20,
+    "image_url": "https://rihappy.vtexassets.com/arquivos/ids/3019577-800-auto?v=637849397829770000&width=800&height=auto&aspect=true"
+  },
+  {
+    "name": "Mystery Machine",
+    "description": "Scooby Doo.",
+    "quantity": 1,
+    "estimated_value": 50.0,
+    "collection_id": 6,
+    "id": 21,
+    "image_url": "https://images.mattel.net/image/upload/w_646,f_auto,c_scale/shop-us-prod/files/2e2f4ac6001c3b1893696ad54e56f60399f837a6.jpg"
+  },
+  {
+    "name": "logitech g pro",
+    "description": "primeira edi\u00e7\u00e3o do mouse hist\u00f3rico",
+    "quantity": 1,
+    "estimated_value": 500.0,
+    "collection_id": 7,
+    "id": 22,
+    "image_url": "https://images3.kabum.com.br/produtos/fotos/107333/mouse-gamer-sem-fio-logitech-g-pro-wireless-lightspeed-rgb-lightsync-ambidestro-6-botoes-programaveis-hero-25k-910-005271_1644501564_gg.jpg"
+  },
+  {
+    "name": "Kz edx pro",
+    "description": "Fone de qualidade profissional da marca KZ",
+    "quantity": 2,
+    "estimated_value": 50.0,
+    "collection_id": 8,
+    "id": 23,
+    "image_url": "https://m.media-amazon.com/images/I/51jXNm-cKWL._AC_UF1000,1000_QL80_.jpg"
   }
 ]

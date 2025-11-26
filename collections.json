@@ -1,22 +1,82 @@
 [
   {
-    "name": "carrinhos",
-    "description": "",
+    "name": "Moedas do Imperio",
+    "description": "Moedas raras do periodo imperial brasileiro.",
     "is_public": true,
     "owner_id": 2,
-    "image_url": "https://imgs.casasbahia.com.br/1562192417/1xg.jpg?imwidth=500",
+    "image_url": "https://blog.caravelascolecoes.com.br/wp-content/uploads/2019/03/moedas-do-imperio-para-capa.png",
     "id": 1,
-    "value": 225.0,
+    "value": 1550.0,
+    "itemCount": 4
+  },
+  {
+    "name": "Vinis de Jazz",
+    "description": "Primeiras prensagens de classicos do Jazz.",
+    "is_public": true,
+    "owner_id": 3,
+    "image_url": "https://media.vinilrecords.com.br/wp-content/uploads/2019/04/04090738/disco-vinil-modelo-Jazz-Radio.jpg",
+    "id": 2,
+    "value": 850.0,
+    "itemCount": 4
+  },
+  {
+    "name": "Consoles Portateis",
+    "description": "Game Boy, PSP, DS e outros portateis historicos.",
+    "is_public": true,
+    "owner_id": 4,
+    "image_url": "https://www.guiadosperifericos.com.br/file/artigo/243/melhores-consoles-portateis-retro.jpg",
+    "id": 3,
+    "value": 2100.0,
+    "itemCount": 3
+  },
+  {
+    "name": "Marvel Legends",
+    "description": "Figuras da linha Marvel Legends, focando nos X-Men.",
+    "is_public": true,
+    "owner_id": 5,
+    "image_url": "https://m.media-amazon.com/images/I/71VAi1tDBRL._AC_UF894,1000_QL80_.jpg",
+    "id": 4,
+    "value": 1200.0,
+    "itemCount": 4
+  },
+  {
+    "name": "Cartas Pokemon",
+    "description": "Cartas da primeira geracao (Base Set).",
+    "is_public": true,
+    "owner_id": 1,
+    "image_url": "https://i0.wp.com/jklaczpokemon.com/wp-content/uploads/2016/05/hitmonchan-base-set-7.jpg?resize=600%2C825&ssl=1",
+    "id": 5,
+    "value": 5000.0,
     "itemCount": 2
   },
   {
-    "name": "teste",
-    "description": "",
+    "name": "Hot Wheels Premium",
+    "description": "Carros da cultura pop e edicoes limitadas.",
     "is_public": true,
-    "owner_id": 2,
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7v8swxcPwGVgwbmfFdIvVKYJdhKx2iBztw&s",
-    "id": 2,
-    "value": 0.0,
-    "itemCount": 0
+    "owner_id": 1,
+    "image_url": "https://cdn.awsli.com.br/600x700/2640/2640978/produto/229771718/imagem887961705430_1-rokskog3ig.jpg",
+    "id": 6,
+    "value": 350.0,
+    "itemCount": 5
+  },
+  {
+    "name": "mouses gamer",
+    "description": "uma cole\u00e7\u00e3o de mouses",
+    "is_public": true,
+    "owner_id": 6,
+    "image_url": "https://techinter.com.br/wp-content/uploads/2025/05/melhores-mouses.jpg",
+    "id": 7,
+    "value": 500.0,
+    "itemCount": 1
+  },
+  {
+    "name": "Fones IEM",
+    "description": "Fones de alta qualidade",
+    "is_public": true,
+    "owner_id": 7,
+    "image_url": "https://preview.redd.it/my-iem-collection-and-impressions-on-all-of-them-v0-c1g0kohb0bsc1.jpeg?auto=webp&s=f0749f93d93dc7cc7a37a68ee763ed053d920f58",
+    "id": 8,
+    "value": 100.0,
+    "itemCount": 2
   }
 ]

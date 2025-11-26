@@ -1,14 +1,51 @@
 [
   {
     "id": 1,
-    "name": "gabriel",
-    "email": "gabriel@gabriel.com",
-    "hashed_password": "$2b$12$O.th9LPS0Hk5Tkpx3l4gj.h5522ubF7V2dhXezAOtNchzgWtfWJ9i"
+    "name": "Gabriel Ribeiro",
+    "email": "gabriel@collectmaster.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD.",
+    "bio": null
   },
   {
     "id": 2,
-    "name": "teste",
-    "email": "teste@teste.com",
-    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD."
+    "name": "Ana Clara",
+    "email": "ana@collectmaster.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD.",
+    "bio": null
+  },
+  {
+    "id": 3,
+    "name": "Roberto Carlos",
+    "email": "roberto@collectmaster.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD.",
+    "bio": null
+  },
+  {
+    "id": 4,
+    "name": "Julia Games",
+    "email": "julia@collectmaster.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD.",
+    "bio": null
+  },
+  {
+    "id": 5,
+    "name": "Paulo Action",
+    "email": "paulo@collectmaster.com",
+    "hashed_password": "$2b$12$LoyVC0DjbMksYYRe3OU7dusumxpPegM/vjyN9pboH2GQ/bx3juyD.",
+    "bio": null
+  },
+  {
+    "id": 6,
+    "name": "CollectMaste",
+    "email": "collectmaster@collectmaster.com",
+    "hashed_password": "$2b$12$PPjottNVocZHVNGZjxiujOQH52iAMI6h1dxhJXznq3yFyvLWm7B8G",
+    "bio": "ContaTeste"
+  },
+  {
+    "id": 7,
+    "name": "Conta Teste",
+    "email": "contateste@teste.com",
+    "hashed_password": "$2b$12$vEDI/qxwh73IhT./XvRy8.UIl.VbsnjJzJY.cn9G5dSOfrdG3AHWa",
+    "bio": "Ol\u00e1, sou apenas uma conta de testes"
   }
 ]
